@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michael's Pizza</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <h1> Michael's Pizza Web Order Form </h1>
+        <form name='pizzaform' method='get' action='order.jsp'>
+            <p>Customer Email: <input type='text' name='email' size='40'
+                   placeholder="enter email" required></p>
+            <input type='radio' name='size' value='large' checked required>Large
+            <input type='radio' name='size' value='medium' required>Medium
+            <input type='radio' name='size' value='small' required>Small
+            <br>
+            <input type='radio' name='type' value='Pan' required>Pan
+            <input type='radio' name='type' value='Hand-Tossed' required>Hand-Tossed
+            <input type='radio' name='type' value='Thin' required>Thin
+            <br>
+            <input type="checkbox" name="toppings" value="Cheese" >Cheese
+            <input type="checkbox" name="toppings" value="Pepperoni" >Pepperoni
+            <input type="checkbox" name="toppings" value="Mushroom" >Mushroom
+            <input type="checkbox" name="toppings" value="Pineapple" >Pineapple
+            <br>
+            <input type="submit" name="order" value="Place Order">
+        </form> 
+    </body>
+</html>
